@@ -1,13 +1,304 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>MechaPuma - Welcome!</title>
+
+<link rel="Icon" href="favicon.ico">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Helvetica" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Muli:200,300,400,700,800,900" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    body {
+        margin: 0px;
+    }
+    .pagetitle {
+        font-family: Muli, Sans-Serif;
+        font-weight: 1000;
+        background-color: #ff9900;
+        color: white;
+        font-size: 24pt;
+        text-shadow: 0px 2px 0px gray;
+        box-shadow: 0px 4px 0px #db870a, 0px 8px 16px rgba(0,0,0,0.25);
+        display: block;
+        width: 100%;
+        height: 56px;
+        text-align: center;
+        padding-top: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+    }
+    .navbar {
+        overflow: hidden;
+        background-color: #ff5d00;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        font-family: Muli, Sans-Serif;
+        z-index: 2;
+    }
+    .navbar:hover {
+        border-bottom: none;
+    }
+
+    .navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px 24px;
+        text-decoration: none;
+        font-size: 16pt;
+    }
+
+    .navbar a:hover {
+        background: orange;
+        color: white;
+        border-bottom: 4px solid #ED8600;
+        transition: 0.5s;
+    }
+    .topbanner {
+        width: 85%;
+        height: 240px;
+        position: relative;
+        background-color: gray;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3.5em;
+    }
+    .main {
+        width: 85%;
+        height: 1080px;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    p {
+        font-family: Muli, Sans-Serif;
+        font-weight: 100;
+        font-size: 14pt;
+    }
+    .iframestyle {
+        border: none;
+        box-shadow: 0px 4px 16px rgba(0,0,0,0.25);
+        display: block;
+        width: 100%;
+        height: 35%;
+        max-width: 100%;
+        max-height: 35%;
+        z-index: 1;
+    }
+    .leftbar {
+        
+    }
+    .menufooter{
+        all: initial;
+        display: block;
+        width: 100%;
+        height: 5%; 20px;
+        min-height: 40px;
+        overflow: hidden;
+        background-color: #ff5d00;
+        color: white;
+        font-family: Muli, Sans-Serif;
+        text-align: center;
+        padding-top: 10px;
+        box-sizing: border-box;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+    }
+    .pfpimgtop {
+        width: 44px;
+        height: 44px;
+        position: relative;
+        border-radius: 100%;
+        max-width: 44px;
+        min-width: 44px;
+        max-height: 44px;
+        min-height: 44px;
+        margin-left: 10%;
+        margin-top: 5%;
+    }
+    .pfpimg {
+        width: 44px;
+        height: 44px;
+        position: relative;
+        border-radius: 100%;
+        max-width: 44px;
+        min-width: 44px;
+        max-height: 44px;
+        min-height: 44px;
+        margin-left: 10%;
+        margin-top: 0%;
+    }
+    .pfpimg:hover, .pfpimgtop:hover {
+        transition: 1s;
+        box-shadow: 0px 4px 0px rgba(0,0,0,0.25);
+    }
+    .pfptxt {
+        font-family: Muli, Sans-Serif;
+        font-weight: 400;
+        position: relative;
+        margin-top: -17.5%;
+        margin-left: 35%;
+        text-decoration: none;
+        color: black;
+    }
+    .pfptxt:link {
+        text-decoration: none;
+    }
+    .pfptxt:visited {
+        text-decoration: none;
+    }
+    .pfptxt:hover {
+        text-decoration: none;
+    }
+    .pfptxt:active {
+        text-decoration: none;
+    }
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: none;
+    }
+    a:active {
+        text-decoration: none;
+    }
+
+    
+    /* SCREEN SIZE */
+    @media only screen and (max-width: 600px) {
+        .navbar, .navbar a, .navbar:hover, .navbar a:hover {display: none;}
+        .topbanner {
+            margin-top: 0;
+            width: 100%;
+            min-width: 360px;
+        }
+        .pagetitle {
+            font-size: 350%;
+            padding-top: 14px;
+            width: 100%;
+            min-width: 360px;
+            padding-bottom: 30px;
+            margin-top: 0;
+        }
+        .main {
+            width: 100%;
+            min-width: 360px;
+        }
+        p {
+            font-size: 150%;
+        }
+        .iframestyle {
+            width: 100%;
+            height: 35%;
+        }
+        p {
+            margin-right: 1em;
+            margin-left: 1em;
+        }
+        .leftbar {
+            display: none;
+        }
+        .menufooter {
+            display: none;
+        }
+        .pfpimg {
+            display: none;
+        }
+    }
+    
+    @media only screen and (min-width: 900px) {
+        .leftbar {
+            float: left;
+            width: 15%;
+            min-width: 240px;
+            height: 100%;
+            max-height: 100%;
+            position: fixed;
+            background-color: white;
+            box-shadow: 0px 0px 24px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        .iframestyle {
+            max-width: 100%;
+            width: 200%;
+            max-height: 50%;
+            height: 50%;
+        }
+        .topbanner {
+            margin-left: 30%;
+            width: 62.5%;
+        }
+        .main {
+            margin-left: 30%;
+            width: 62.5%;
+        }
+    }
+    @media only screen and (max-width: 899.999px) {
+        .pfpimg {
+            display: none;
+        }
+    }
+    @media only screen and (min-width: 1080px) {
+        .main {
+            margin-left: 27.5%;
+        }
+        .topbanner {
+            margin-left: 27.5%;
+        }
+    }
+    
+</style>
+<script>console.log("Hey, that's pretty guuuuuud!")</script>
+</head>
+
 <body>
 
-<h1>This is heading 1</h1>
-<h2>This is heading 2</h2>
-<h3>This is heading 3</h3>
-<h4>This is heading 4</h4>
-<h5>This is heading 5</h5>
-<h6>This is heading 6</h6>
+    <div class="leftbar">
+        <a href="https://www.youtube.com/MechaPuma">
+            <img src="https://lh3.googleusercontent.com/-fZU-pFTBJdY/Wq_jHKBe-1I/AAAAAAAAAdo/Hd1fSTVglDIDmCzOEbOwS4oxi0dpAAuTQCJoC/w1060-h1060-n-rw/YouTube%2BIcon.jpg" class="pfpimgtop">
+            <h2 class="pfptxt">YOUTUBE</h2>
+        </a>
+        <a href="https://www.twitter.com/MechaPuma">
+            <img src="http://goinkscape.com/wp-content/uploads/2015/07/twitter-logo-final.png" class="pfpimg">
+            <h2 class="pfptxt">TWITTER</h2>
+        </a>
+    </div>
+    <div class="topbanner"></div>
+    
+    <div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#more">MORE</a>
+    </div>
+
+    <div class="main">
+        <div class="pagetitle">WELCOME!</div>
+            <p style="position: relative; color: black; z-index: 1; text-indent: 3em;">Welcome to the official website of MechaPuma! Here, you'll find all sorts of stuff, like contact information, a description of the channel, personal information, and more!</p>
+            <iframe src="https://www.youtube.com/embed/ReUvaL4CeQw" class="iframestyle"></iframe>
+        <div class="pagetitle">SERIES</div>
+            <p style="text-indent: 2em;">Here on MechaPuma, we have many series—from the occasional DIYs, to sarcastic how-to's... to "Creative" Content! You might be wondering why there is such a broad spectrum of videos on this channel. I post whatever comes to mind, such as highly-requested content and series, as well as trending topics and just 'thought-provoking' videos. A while back, at the start of this whole YouTube thing, I posted an abundance of gaming content, and later, parodic how-to's, which, at the time, was what you guys wanted—but now, we have a massive unknown journey ahead of us—so get ready for more cringe, parodies, music, and more!</p>
+    </div>
+    <footer class="menufooter">WANT TO SUPPORT MECHAPUMA? TAKE THIS SURVEY!</footer>
 
 </body>
+
 </html>
