@@ -19,6 +19,7 @@
         margin-top: 50px;
     }
     .navbar {
+        transition: 1s;
         overflow: hidden;
         background-color: #ff5d00;
         position: fixed;
@@ -32,6 +33,7 @@
     }
 
     .navbar a {
+        transition: 1s;
         float: left;
         display: block;
         color: white;
@@ -44,7 +46,8 @@
     .navbar a:hover {
         background: orange;
         color: white;
-        border-bottom: 4px solid #ED8600;
+        box-shadow: 0px 4px 0px #ff9900;
+        margin-bottom: 4px;
         transition: 0.5s;
     }
     .topbanner {
@@ -125,11 +128,26 @@
         margin-left: 10%;
         margin-top: 0%;
     }
-    .pfpimg:hover, .pfpimgtop:hover {
+    .pfpimg:hover {
         transition: 1s;
-        box-shadow: 0px 4px 0px rgba(0,0,0,0.25);
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+        position: static;
+        border: 4px solid transparent;
+        margin-left: 20px;
+        margin-top: -4px;
+        margin-bottom: -4px;
+    }
+    .pfpimgtop:hover {
+        transition: 1s;
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+        position: static;
+        border: 4px solid transparent;
+        margin-left: 20px;
+        margin-top: 68px;
+        margin-bottom: -4px;
     }
     .pfptxt {
+        transition: 1s;
         font-family: Muli, Sans-Serif;
         font-weight: 400;
         position: relative;
@@ -146,10 +164,46 @@
         text-decoration: none;
     }
     .pfptxt:hover {
+        transition: 1s;
         text-decoration: none;
+        text-shadow: 0px 2px 4px rgba(0,0,0,0.25);
+        box-shadow: -8px 0px 0px lightgray;
+        padding-left: 14px;
+        margin-left: 4.4em;
     }
     .pfptxt:active {
         text-decoration: none;
+    }
+    .lefttitle {
+        transition: 1s;
+        width: 90%;
+        height: 28px;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-family: Muli, Sans-Serif;
+        font-size: 18pt;
+        color: black;
+        position: relative;
+        top: 54px;
+        box-shadow: 0px 2px 0px lightgray;
+        padding: 8px 0px;
+    }
+    .lefttitle:hover {
+        transition: 1s;
+        box-shadow: 0px 2px 0px lightgray;
+        font-size: 20pt;
+        letter-spacing: 2px;
+    }
+    .line {
+        background-color: lightgray;
+        width: 85%;
+        height: 2px;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        top: 4px;
     }
     a:link {
         text-decoration: none;
