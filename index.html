@@ -27,6 +27,9 @@
             margin-top: 0;
             width: 100%;
             min-width: 360px;
+            margin-left: auto;
+            background-attachment: scroll;
+            background-size: 500%;
         }
         .pagetitle {
             font-size: 350%;
@@ -61,6 +64,21 @@
         .pfpimg {
             display: none;
         }
+        .topbanner {
+            background-attachment: fixed;
+            background-clip: padding-box;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-image: url(https://image.ibb.co/kFEhVS/Mecha_Puma_Channel_Banner_Cropped.jpg) 0px -50px;
+        }
+    }
+    
+    @media only screen and (max-width:900px) {
+        .topbanner {
+            margin-left: 0;
+            margin-right: 0;
+            width: 100%;
+        }
     }
     
     @media only screen and (min-width: 900px) {
@@ -77,9 +95,7 @@
             top: 0;
         }
         .iframestyle {
-            max-width: 100%;
-            width: 200%;
-            max-height: 50%;
+            width: 100%;
             height: 50%;
         }
         .topbanner {
@@ -111,7 +127,7 @@
 
 <body>
 
-    <div class="leftbar">
+    <div class="leftbar" style="top: 54px;">
         <div class="lefttitle">SOCIAL MEDIA</div>
         <a href="https://www.youtube.com/MechaPuma">
             <img src="https://image.ibb.co/iEv9Hx/You_Tube_Icon.jpg" class="pfpimgtop">
@@ -130,11 +146,18 @@
             <h2 class="pfptxt">INSTAGRAM</h2>
         </a>
         <div class="line"></div>
+        <div class="lefttitle">CONTACT ME</div>
+            <img src="https://image.ibb.co/kQEVjn/Mail_Icon.jpg" class="pfpimgtop">
+            <a href="mailto:contact@mechapuma.com"><h2 class="pfptxt">E-MAIL</h2></a>
+            <img src="https://image.ibb.co/dyLyAH/Discord_Icon.jpg" class="pfpimg">
+        <h2 class="pfptxt">MECHAPUMA
+            #4732</h2>
     </div>
-    <div class="topbanner"></div>
+    <div class="topbanner" style="">
+    </div>
     
     <div class="navbar">
-        <a href="index.html">HOME</a>
+        <a href="#home">HOME</a>
         <a href="#more">MORE</a>
     </div>
 
@@ -144,6 +167,7 @@
             <iframe src="https://www.youtube.com/embed/ReUvaL4CeQw" class="iframestyle"></iframe>
         <div class="pagetitle">SERIES</div>
             <p style="text-indent: 2em;">Here on MechaPuma, we have many series—from the occasional DIYs, to sarcastic how-to's... to "Creative" Content! You might be wondering why there is such a broad spectrum of videos on this channel. I post whatever comes to mind, such as highly-requested content and series, as well as trending topics and just 'thought-provoking' videos. A while back, at the start of this whole YouTube thing, I posted an abundance of gaming content, and later, parodic how-to's, which, at the time, was what you guys wanted—but now, we have a massive unknown journey ahead of us—so get ready for more cringe, parodies, music, and more!</p>
+            <h3>For more detail on series, click here!</h3>
     </div>
     <footer class="menufooter">WANT TO SUPPORT MECHAPUMA? TAKE THIS SURVEY!</footer>
 
