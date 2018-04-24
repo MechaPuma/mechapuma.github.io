@@ -21,16 +21,46 @@
 
 <style>
     /* SCREEN SIZE */
+    @media only screen and (min-width: 2000) {
+        body {
+            
+        }
+        .iframestyle {
+            height: 35%;
+            max-height: 35%;
+            min-height: 35%;
+        }
+        p {
+            font-size: 250%;
+        }
+        .pagetitle {
+            font-size: 550%;
+            height: 5%;
+        }
+        .menufooter {
+            height: 5%;
+            font-size: 200%;
+        }
+        h3 {
+            font-size: 250%;
+            margin-right: 50%;
+            text-align: center;
+        }
+        .navbar {
+            width: 100%;
+            height: 7.5%;
+        }
+        .navbar a {
+            font-size: 300%;
+            padding-top: 24px;
+            padding-left: 36px;
+            padding-right: 36px;
+        }
+        .leftbar {
+        }
+    }
     @media only screen and (max-width: 600px) {
         .navbar, .navbar a, .navbar:hover, .navbar a:hover {display: none;}
-        .topbanner {
-            margin-top: 0;
-            width: 100%;
-            min-width: 360px;
-            margin-left: auto;
-            background-attachment: scroll;
-            background-size: 500%;
-        }
         .pagetitle {
             font-size: 350%;
             padding-top: 14px;
@@ -55,6 +85,14 @@
             margin-right: 1em;
             margin-left: 1em;
         }
+        h3 {
+            margin-right: 0;
+            height: 3.25%;
+            font-size: 200%;
+            padding-top: 2.5%;
+            padding-bottom: 2.5%;
+            text-transform: uppercase;
+        }
         .leftbar {
             display: none;
         }
@@ -65,6 +103,12 @@
             display: none;
         }
         .topbanner {
+            margin-top: 0;
+            width: 100%;
+            min-width: 360px;
+            margin-left: auto;
+            background-attachment: scroll;
+            background-size: 500%;
             background-attachment: fixed;
             background-clip: padding-box;
             background-position: top;
@@ -73,7 +117,7 @@
         }
     }
     
-    @media only screen and (max-width:900px) {
+    @media only screen and (max-width: 900px) {
         .topbanner {
             margin-left: 0;
             margin-right: 0;
@@ -122,11 +166,17 @@
     }
     
 </style>
-<script>console.log("Hey, that's pretty guuuuuud!")</script>
+<script>console.log("Hey there, guys; it's Steven frommmmm MechaPuma!")</script>
 </head>
 
 <body>
-
+    
+    <div class="navbar">
+        <a href="#home">HOME</a>
+        <a href="#more">MORE</a>
+        <a href="#submissions">SUBMISSIONS</a>
+    </div>
+    
     <div class="leftbar" style="top: 54px;">
         <div class="lefttitle">SOCIAL MEDIA</div>
         <a href="https://www.youtube.com/MechaPuma">
@@ -155,19 +205,16 @@
     </div>
     <div class="topbanner" style="">
     </div>
-    
-    <div class="navbar">
-        <a href="#home">HOME</a>
-        <a href="#more">MORE</a>
-    </div>
-
     <div class="main">
         <div class="pagetitle">WELCOME!</div>
             <p style="position: relative; color: black; z-index: 1; text-indent: 3em;">Welcome to the official website of MechaPuma! Here, you'll find all sorts of stuff, like contact information, a description of the channel, personal information, and more!</p>
             <iframe src="https://www.youtube.com/embed/ReUvaL4CeQw" class="iframestyle"></iframe>
         <div class="pagetitle">SERIES</div>
             <p style="text-indent: 2em;">Here on MechaPuma, we have many series—from the occasional DIYs, to sarcastic how-to's... to "Creative" Content! You might be wondering why there is such a broad spectrum of videos on this channel. I post whatever comes to mind, such as highly-requested content and series, as well as trending topics and just 'thought-provoking' videos. A while back, at the start of this whole YouTube thing, I posted an abundance of gaming content, and later, parodic how-to's, which, at the time, was what you guys wanted—but now, we have a massive unknown journey ahead of us—so get ready for more cringe, parodies, music, and more!</p>
-            <h3>For more detail on series, click here!</h3>
+            <a>
+                <h3>Read More...</h3>
+            </a>
+        <div class="middlebanner" style=""></div>
     </div>
     <footer class="menufooter">WANT TO SUPPORT MECHAPUMA? TAKE THIS SURVEY!</footer>
 
