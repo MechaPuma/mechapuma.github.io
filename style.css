@@ -81,6 +81,30 @@
         font-weight: 100;
         font-size: 14pt;
     }
+    .promotext {
+        transition: 1s;
+        font-family: Muli, Sans-Serif;
+        font-size: 48pt;
+        font-weight: 1000;
+        text-align: center;
+        color: white;
+        text-shadow: 0px 4px 4px rgba(0,0,0,0.5);
+        padding-top: 2.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .promotext:hover {
+        transition: 1s;
+        font-family: Muli, Sans-Serif;
+        font-size: 48pt;
+        font-weight: 1000;
+        text-align: center;
+        color: rgba(360,360,360,0.75);
+        text-shadow: 0px 8px 16px rgba(0,0,0,0.5);
+        padding-top: 2.5em;
+        margin-left: auto;
+        margin-right: auto;
+    }
     h3 {
         transition: 1s;
         font-family: Muli, Sans-Serif;
@@ -117,7 +141,7 @@
         all: initial;
         display: block;
         width: 100%;
-        height: 5%; 20px;
+        height: 5%;
         min-height: 40px;
         overflow: hidden;
         background-color: #ff5d00;
@@ -254,13 +278,15 @@
         background-position: center center;
         background-image: url(https://image.ibb.co/ic3kyc/youtube_pattern.png);
         background-size: cover;
-        filter: blur(0px);
+        filter: none;
         margin-left: auto;
         margin-right: auto;
         background-attachment: fixed;
-        box-shadow: 6px 12px 36px rgba(0,0,0,0.5) inset;
+        box-shadow: 0px 0px 36px rgba(0,0,0,0.5) inset;
     }
     .middlebanner:hover {
         transition: 5s;
-        filter: blur(0px) contrast(125%) hue-rotate(360deg);
+        filter: blur(0px) hue-rotate(360deg);
+        box-shadow: inset 0px 720px 36px rgba(0,0,0,0.25), inset 0px -720px 36px rgba(0,0,0,0.25);
+        background-attachment: fixed;
     }
