@@ -117,6 +117,38 @@
         margin-bottom: 4px;
         transition: 0.5s;
     }
+    .navbar2 {
+        transition: 1s;
+        overflow: hidden;
+        background-color: whitesmoke;
+        color: white;
+        position: relative;
+        top: 16px;
+        width: 100%;
+        font-family: Muli, Sans-Serif;
+        text-decoration: none;
+        z-index: 1;
+    }
+    .navbar2 a {
+        transition: 1s;
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 14px;
+        text-decoration: none;
+        font-size: 16pt;
+        overflow: hidden;
+    }
+    .navbar2:hover {
+        transition: 1s;
+    }
+    .navbar2 a:hover {
+        transition: 1s;
+        background-color: lightgray;
+        color: white;
+        box-shadow: 0px -64px 0px rgba(0,0,0,0.5) inset;
+    }
     .topbanner {
         transition: 1s;
         width: 100%;
@@ -129,6 +161,21 @@
         background-attachment: scroll;
         background-clip: padding-box;
         background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .aboutmebanner {
+        transition: 1s;
+        width; 100%;
+        height: 480px;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 4em;
+        background-image: url(https://image.ibb.co/jO2W8y/rm_CMEKOW6_J_Sap_WKI6_MSus_PLw_UJ4yy_I8_QCSCGCM81o_Fn_L15_Ec6_Rvwpo_TYGqe_B_PWbcw_AAM0_P1_Ska_FMb_IBMg_YIGw9_IVs_WLwn_JIks_Zt1s_O5_HN_CVUL4_QCTchtuc5f0_YL4o4_Vyk_CW4_D6_Vyib_NXJ1_WQU2_Tc_EQ5_Wg_T_a_Dq8tf3fc57_Db_V2zx6oro_Da_Bn1_UNWGqa52ox_ZXf_K5y2dgq0a_Hn_Dq_Sr_YTm_HOB9o7_Lj_Wjo2yl_EMW83ysz6_QNt_Q6rn_FVo9_OX1o5.jpg);
+        background-attachment: fixed;
+        background-clip: padding-box;
+        background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -147,6 +194,16 @@
         background-color: transparent;
         margin-left: auto;
         margin-right: auto;
+    }
+    .main3 {
+        width: 85%;
+        height: auto;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: transparent;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 360px;
     }
     p {
         font-family: Muli, Sans-Serif;
@@ -226,6 +283,15 @@
     .iframestyle2:hover {
         transition: 2.5s;
         box-shadow: 0px 4px 0px rgba(0,0,0,1), 0px 16px 32px rgba(0,0,0,0.25);
+    }
+    .moreframe {
+        transition: 1s;
+        position: relative;
+        top: -2em;
+        width: 100%;
+        height: 480px;
+        border: none;
+        overflow: visible;
     }
     .leftbar {
         overflow: hidden;
@@ -494,7 +560,16 @@
         margin-top: -24px;
         box-shadow: 0px 12px 48px rgba(0,0,0,0.5);
     }
-
+    .messageoverlay {
+        background-color: rgba(0,0,0,0.75);
+        color: white;
+        font-family: Muli, Sans-Serif;
+        text-align: center;
+        width: 85%;
+        height: 85%;
+        border-radius: 10px;
+        box-shadow: 0px 8px 0px rgba(0,0,0,0.5);
+    }
 
     /* SCREEN SIZE */
     @media only screen and (min-width: 2000) {
@@ -535,8 +610,33 @@
         .leftbar {
         }
     }
+    @media only screen and (min-width: 600px) {
+        .navbutton {
+            width: 0;
+            height: 0;
+            display: hidden;
+        }
+    }
     @media only screen and (max-width: 600px) {
         .navbar, .navbar a, .navbar:hover, .navbar a:hover {display: none;}
+        body {
+            width: screen;
+        }
+        .navbutton {
+            transition: 0s;
+            width: screen;
+            padding: 12px 14px;
+            font-size: 30pt;
+            background-color: #ff5d00;
+            color: white;
+            font-family: Muli, Sans-Serif;
+            text-align: center;
+        }
+        .navbutton:hover {
+            transition: 1s;
+            background-color: orangered;
+            border-left: 48px solid rgba(0,0,0,0.25);
+        }
         .pagetitle {
             font-size: 350%;
             padding-top: 14px;
@@ -546,9 +646,32 @@
             margin-top: 0;
             border-radius: 0px;
         }
+        .pagetitle2 {
+            font-size: 250%;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            width: 100%;
+            border-radius: 0px;
+        }
+        .pagetitle3 {
+            font-size: 250%;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-radius: 0px;
+        }
         .main {
             width: 100%;
             min-width: 360px;
+        }
+        .main2 {
+            width: 100%;
+        }
+        .main3 {
+            width: 100%;
+        }
+        .aboutmebanner {
+            width: 100%;
+            margin-top: -1em;
         }
         p {
             font-size: 150%;
@@ -561,6 +684,9 @@
         .iframestyle2 {
             width: 100%;
             height: 40%;
+        }
+        .moreframe {
+            margin-top: -2em;
         }
         .accordionpanel {
             transition: 1s;
@@ -617,13 +743,13 @@
         .topbanner {
             margin-top: 0;
             width: 100%;
-            min-width: 360px;
+            height: 360px;
             margin-left: auto;
             background-attachment: scroll;
-            background-size: 500%;
-            background-attachment: fixed;
+            background-size: cover;
+            background-attachment: scroll;
             background-clip: padding-box;
-            background-position: top;
+            background-position: -1440px;
             background-repeat: no-repeat;
             background-image: url(https://image.ibb.co/kFEhVS/Mecha_Puma_Channel_Banner_Cropped.jpg) 0px -50px;
         }
