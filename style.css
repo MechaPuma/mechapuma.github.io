@@ -182,6 +182,7 @@
     .main {
         width: 85%;
         height: 2440px;
+        max-width: 720px;
         background-color: transparent;
         margin-left: auto;
         margin-right: auto;
@@ -189,8 +190,6 @@
     .main2 {
         width: 85%;
         height: 720px;
-        min-height: 720px;
-        max-height: 720px;
         background-color: transparent;
         margin-left: auto;
         margin-right: auto;
@@ -665,6 +664,7 @@
         }
         .main2 {
             width: 100%;
+            height: 100%;
         }
         .main3 {
             width: 100%;
@@ -701,34 +701,44 @@
         }
         .promotext {
             transition: 1s;
-            font-size: 60pt;
-            padding-top: 1em;
+            font-size: 80pt;
+            padding-top: .5em;
             font-weight: 1000;
             letter-spacing: -1pt;
             line-height: .85em;
         }
         .promotext:hover {
             transition: 5s;
-            font-size: 60pt;
-            padding-top: 1em;
+            font-size: 80pt;
+            padding-top: .5em;
             font-weight: 1000;
         }
         .mbbutton {
+            margin-top: -1em;
             width: 90%;
-            height: 15%;
-            font-size: 24pt;
+            height: 25%;
+            font-size: 36pt;
         }
         .mbbutton:hover {
+            margin-top: -1em;
             width: 90%;
-            height: 15%;
-            font-size: 24pt;
+            height: 25%;
+            font-size: 36pt;
         }
         h3 {
             margin-right: 0;
             height: 3.25%;
-            font-size: 200%;
-            padding-top: 2.5%;
-            padding-bottom: 2.5%;
+            font-size: 250%;
+            padding-top: 4%;
+            padding-bottom: 0;
+            text-transform: uppercase;
+        }
+        h3:hover {
+            margin-right: 0;
+            height: 3.25%;
+            font-size: 250%;
+            padding-top: 4%;
+            padding-bottom: 0;
             text-transform: uppercase;
         }
         .leftbar {
