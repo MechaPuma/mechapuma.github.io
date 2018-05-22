@@ -182,7 +182,6 @@
     .main {
         width: 85%;
         height: 2440px;
-        max-width: 720px;
         background-color: transparent;
         margin-left: auto;
         margin-right: auto;
@@ -190,6 +189,7 @@
     .main2 {
         width: 85%;
         height: 720px;
+        max-width: 1080px;
         background-color: transparent;
         margin-left: auto;
         margin-right: auto;
