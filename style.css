@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+}
+.positionRelative {
+    position: relative;
+}
+.transition1 {
+    transition: 0.5s;
+}
+.alignCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+h1 {
+    top: -1.75em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    color: white;
+    font-family: 'Raleway', Sans-Serif;
+    text-transform: uppercase;
+    background-color: #FF5000;
+    font-size: 28pt;
+    text-align: center;
+    width: 95%;
+    box-shadow: -4em 0.25em 0 #EE3500, 4em 0.25em 0 #EE3500;
+    z-index: 1;
+}
+.mainContainer {
+    width: 80%;
+    background-color: transparent;
+    color: transparent;
+    position: relative;
+}
+.mainContainer2 {
+    width: 80%;
+    background-color: transparent;
+    color: black;
+    position: relative;
+    z-index: 5;
+}
+#mainBanner {
+    top: -1.5em;
+    width: 100%;
+    height: 15em;
+    background-image: url(Images/Banners/mpBanner.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-clip: padding-box;
+    background-size: cover;
+    z-index: 1;
+}
+.category1 {
+    top: -2em;
+    width: 100%;
+    height: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    background-color: red;
+    color: white;
+    box-shadow:-1em 0.25em 0 #CC1400, 1em 0.25em 0 #CC1400;
+    z-index: 2;
+    
+    font-family: 'Raleway', Sans-Serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24pt;
+}
+.category2 {
+    top: -2em;
+    width: 100%;
+    height: auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    background-color: red;
+    color: white;
+    box-shadow:-1em 0.25em 0 #CC1400, 1em 0.25em 0 #CC1400;
+    z-index: 2;
+    
+    font-family: 'Raleway', Sans-Serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 24pt;
+}
+.category1footer {
+    top: -4em;
+    width: 100%;
+    color: white;
+    background-color: red;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    z-index: 3;
+    
+    font-family: 'Raleway', Sans-Serif;
+    font-weight: 300;
+}
+.subcategory1 {
+    top: -4em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: inherit;
+    padding: 2.5%;
+    z-index: 3;
+    
+    font-family: 'Raleway', Sans-Serif;
+    font-size: 12pt;
+    font-weight: 300;
+}
+.informative {
+    top: -3em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: inherit;
+    padding: none;
+    z-index: 5;
+    
+    font-family: 'Raleway', Sans-Serif;
+    font-size: 16pt;
+    font-weight: 600;
+}
+.questions {
+    top: -3em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -1.5em;
+    color: black;
+    background-color: lightyellow;
+    padding: 0.5em;
+    z-index: 5;
+    box-shadow: 0px 2px 0px peachpuff;
+    border-top: 2px solid peachpuff;
+    
+    font-family: 'Raleway', Sans-Serif;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+}
+.profileContainer {
+    width: 75%;
+    max-width: 15em;
+    height: 2.5em;
+    background-color: rgb(255,255,235);
+    border-radius: 1em;
+    padding: 1em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+.profilePicture {
+    min-width: 2.5em;
+    max-width: 2.5em;
+    min-height: 2.5em;
+    max-height: 2.5em;
+    border-radius: 100em;
+    position: absolute;
+    
+    background-image: url(Images/Banners/mpBanner.jpg);
+    background-size: cover;
+}
+.profileTitle {
+    font-family: 'Raleway', Sans-Serif;
+    font-weight: 400;
+    font-size: 16pt;
+    text-indent: 2.5em;
+}
+.profileDescription {
+    font-size: 12pt;
+    font-weight: 100;
+    color: dimgray;
+}
+
+/* SCREEN SIZE */
+@media only screen and (max-width: 860px) {
+    .subcategory1 {
+        padding: 5%;
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    #mainBanner {
+        width: 100%;
+        height: 20em;
+        background-position: -1080px;
+    }
+    h1 {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .subcategory1 {
+        padding: 7.5%;
+        width: 75%;
+    }
+}
