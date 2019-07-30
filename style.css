@@ -50,12 +50,25 @@ h1 {
     background-size: cover;
     z-index: 1;
 }
+.newsBannerFVG {
+    margin-top: -4em;
+    width: 85%;
+    height: 25em;
+    background-image: url(Images/FurryCatThing.png);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-clip: padding-box;
+    background-size: cover;
+    border-radius: 0.5em;
+    margin-bottom: 4em;
+}
 .category1 {
     top: -2em;
     width: 100%;
     height: auto;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
     text-align: center;
     background-color: red;
     color: white;
@@ -98,12 +111,15 @@ h1 {
 }
 .subcategory1 {
     top: -4em;
-    width: 85%;
+    width: 82.5%;
     margin-left: auto;
     margin-right: auto;
     color: black;
     background-color: inherit;
-    padding: 2.5%;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
     z-index: 3;
     
     font-family: 'Raleway', Sans-Serif;
@@ -124,7 +140,7 @@ h1 {
     font-size: 16pt;
     font-weight: 600;
 }
-.questions {
+.highlights {
     top: -3em;
     width: 85%;
     margin-left: auto;
@@ -132,14 +148,13 @@ h1 {
     margin-bottom: -1.5em;
     color: black;
     background-color: lightyellow;
-    padding: 0.5em;
+    padding: 0.25em;
     z-index: 5;
-    box-shadow: 0px 2px 0px peachpuff;
-    border-top: 2px solid peachpuff;
+    border-radius: 100em;
     
     font-family: 'Raleway', Sans-Serif;
     font-size: 16pt;
-    font-weight: 600;
+    font-weight: 300;
     text-align: center;
 }
 .profileContainer {
@@ -180,6 +195,12 @@ h1 {
     .subcategory1 {
         padding: 5%;
         width: 70%;
+    }
+    .newsBannerFVG {
+        width: 85%;
+        height: 12.5em;
+        margin-top: -4em;
+        margin-bottom: 6em;
     }
 }
 @media only screen and (max-width: 650px) {
